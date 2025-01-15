@@ -14,14 +14,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'ZKsync SSO React Template',
   description: 'An application template that uses ZKsync SSO for authentication and wallet connection',
-  icons: {
-    icon: [
-      {
-        url: '/favicon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-  },
 }
 
 export default function RootLayout(props: { children: ReactNode }) {

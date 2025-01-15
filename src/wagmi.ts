@@ -12,6 +12,19 @@ const ssoConnector = zksyncSsoConnector({
   },
 })
 
+export const config = createConfig(
+  {
+    chains: [zksyncSepoliaTestnet],
+    connectors: [
+      injected(),
+      ssoConnector,
+    ],
+    transports: {
+      [zksyncSepoliaTestnet.id]: http(),
+    },
+  }
+)
+
 export function getConfig() {
   return createConfig({
     chains: [zksyncSepoliaTestnet],
